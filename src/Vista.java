@@ -15,6 +15,7 @@ public class Vista {
                 case 1:
                     System.out.println("¿Qué desea registrar? 1. Dinosaurio 2. Planta 3. Mamífero");
                     int op = scn.nextInt();
+                    scn = new Scanner(System.in);
                     switch (op){
                         case 1:
                         System.out.println("D I N O S A U R I O ");
@@ -70,6 +71,7 @@ public class Vista {
                     }
                     break;
                 case 2:
+                    controlador.mostrarEspecimenesCatalogados();
                     break;
                 case 3:
                     break;
